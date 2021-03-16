@@ -5,7 +5,8 @@
 }
 
 :root{
-    --ff-permament: 'Permanent Marker', cursive;;
+    --ff-permament: 'Permanent Marker', cursive;
+    --ff-Roboto: 'Roboto', sans-serif;
 
     --fw-regular: 400;
     --fw-title: 720;
@@ -306,6 +307,12 @@ h3 {
     margin: auto;
     max-width: 1000px;
 }
+
+.timon_text,
+.damola_text{
+    font-family: var(--ff-Roboto);
+}
+
 
 @media (min-width : 1000px){
     .about_timon{
