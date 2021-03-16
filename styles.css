@@ -34,6 +34,7 @@ body{
     background: var(--clr-primary);
     color: var(--clr-sec);
     margin: 0;
+    padding: 0;
     font-family: var(--ff-permament);
     font-size: var(--fs-p);
     line-height: 1.6;
@@ -308,7 +309,8 @@ h3 {
         padding-top: 3.5em;
     }
     .listen{
-        background-size:cover;
+        background-size: cover; 
+        background-position: right; 
 
     }
 }
