@@ -385,6 +385,11 @@ h3 {
 .links{
     margin: auto;
     max-width: 1000px;
+    border: none;
+}
+
+.fieldset{
+    border:none;
 }
 
 .section__title--links {
@@ -410,8 +415,17 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+  }
 
-    
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
   }
   
   input[type=submit] {
@@ -431,4 +445,29 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: val(--clr-primary);
     padding: 20px;
+  }
+
+  .submitBtn{
+      width: 100%;
+      border: none;
+      outline: none;
+      padding-top: 5px;
+      font-family: var(--ff-permament);
+      font-size: 1.2em;
+      color: rgba(182, 182, 182, 0.411);
+      text-align: center;
+      cursor: pointer;
+      background-color: var(--clr-primary)
+  }
+
+  .submitBtn:hover{
+    color: var(--clr-sec);
+  }
+
+  .status{
+      display: grid;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 1em;
+
   }
