@@ -121,23 +121,29 @@
         Kontakt
     </h1>
     <div class="links">
-        <form action="mailto:hemmers.gwuesst@gmail.com" method="post"
-        enctype="text/plain">
-            <label for="fname">Name</label>
-            <input required type="text" id="fname" name="Name" placeholder="Dein Name..">
-            <label for="lname">Nachname</label>
-            <input required type="text" id="lname" name="Nachname" placeholder="Dein Nachname..">
-            <label for="Grund">Grund</label>
-            <select id="Grund" name="Grund">
-            <option value="Thema">Thema</option>
-            <option value="Bemerkung">Bemerkung</option>
-            <option value="Teilnehmen">Teilnehmen</option>
-            </select>
-            <label for="Text">Text</label>
-            <textarea required id="Text" name="Text" placeholder="Was möchtest du uns gerne mitteilen..." style="height:200px"></textarea>
-            <input type="submit" value="Submit">
-        </form>
+        <form action="https://formspree.io/f/xqkgrokp" method="post" id="my-form">
+            <fieldset class="fieldset" id="contact">
+              <label for="fname">Vorname</label>
+              <input type="text" name="name" id="fname" placeholder="Vorname" required="">
+              <label for="nname">Nachname</label>
+              <input type="text" name="name" id="nname" placeholder="Nachname" required="">
+              <label for="grund">Grund</label>
+              <select name="grund" id="grund" required="">
+                <option value="Select" selected="" disabled="">Select</option>
+                <option value="Thema">Thema</option>
+                <option value="Bemerkung">Bemerkung</option>
+                <option value="Teilnehmen">Teilnehmen</option>
+              </select>
+              <label for="text">Mitteilung</label>
+              <textarea rows="5" name="text" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="">
+            </fieldset>
+            <button class="submitBtn" type="submit" id="subBtn">Absenden</button>
+          </form>
     </div>
+    <div class="status" id="status"></div>
     </section>
+    <script src="/form.js"></script>
 </body>
 </html>
+
