@@ -334,17 +334,6 @@ ul {
   margin-right: -5em;
 }
 
-.meBtn {
-  border: none;
-}
-
-.meBtn:focus {
-  outline: 0;
-}
-.meBtn:hover {
-  color: var(--clr-primary);
-}
-
 .section__title--listen {
   color: var(--clr-primary);
   text-align: center;
@@ -353,7 +342,6 @@ ul {
 
 @media (max-width: 500px) {
   .section__title--listen {
-    padding-top: 3.5em;
   }
   .listen {
     padding-top: -10em;
@@ -536,7 +524,8 @@ input[type="submit"]:hover {
   text-align: center;
   cursor: pointer;
   border: none;
-  padding-bottom: 5.5em;
+  padding-bottom: 3.5em;
+  padding-top: 2em;
 }
 .myBtn:hover {
   color: var(--clr-primary);
