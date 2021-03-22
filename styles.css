@@ -42,6 +42,10 @@ body {
   max-width: 100%;
 }
 
+#more {
+  display: none;
+}
+
 section {
   padding: 5em 4em;
 }
@@ -276,9 +280,69 @@ h3 {
 }
 
 .listen {
-  background-image: url("/img/Oval.png");
+  background-image: url("/img/Oval.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.episodes {
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-primary);
+}
+
+.logoPlay {
+  display: none;
+}
+
+.episodeintro .logoPlay {
+  display: absolute;
+}
+
+.episode_title {
+  font-size: 2em;
+  color: var(--clr-primary);
+}
+
+.episode_text {
+  font-size: 1em;
+  font-family: var(--ff-Roboto);
+  color: var(--clr-primary);
+}
+
+.episodeintro_right {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+ul {
+  height: 1900px;
+}
+
+ul {
+  overflow: hidden;
+  overflow-y: scroll;
+  list-style-type: none;
+}
+
+.episode_img {
+  vertical-align: top;
+  border-radius: 20px;
+  align-items: end;
+  margin-right: -5em;
+}
+
+.meBtn {
+  border: none;
+}
+
+.meBtn:focus {
+  outline: 0;
+}
+.meBtn:hover {
+  color: var(--clr-primary);
 }
 
 .section__title--listen {
@@ -292,7 +356,6 @@ h3 {
     padding-top: 3.5em;
   }
   .listen {
-    background-position: right top -10em;
     padding-top: -10em;
   }
 }
@@ -303,16 +366,10 @@ h3 {
   }
 }
 
-.episodes {
-  margin: auto;
-  max-width: 45em;
-}
-
 .section__title--about {
   color: var(--clr-sec);
   position: relative;
   text-align: center;
-  padding-top: 2.5em;
   padding-bottom: 1.5em;
 }
 
@@ -322,9 +379,11 @@ h3 {
   }
 }
 
-.about_timon {
+.about_timon,
+.episodeintro {
   margin: auto;
-  max-width: 1000px;
+  max-width: 900px;
+  padding-top: 2em;
 }
 
 .timon_text,
@@ -345,7 +404,8 @@ h3 {
     grid-template-columns: 1fr 0.6fr;
     grid-gap: 2em;
   }
-  .about_timon {
+  .about_timon,
+  .episodeintro {
     display: grid;
     grid-template-columns: 0.6fr 1fr;
     grid-gap: 2em;
@@ -361,7 +421,7 @@ h3 {
   .damola_title,
   .damola_text,
   .timon_title,
-  .imon_text {
+  .timon_text {
     grid-column: 1;
   }
 }
@@ -457,4 +517,27 @@ input[type="submit"]:hover {
   text-align: center;
   margin: 0 auto;
   margin-top: 1em;
+}
+
+.btnDiv {
+  text-align: center;
+  margin: auto;
+}
+
+.myBtn {
+  width: 100%;
+  position: relative;
+  display: grid;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5em;
+  font-family: var(--ff-permament);
+  color: rgba(182, 182, 182, 0.411);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding-bottom: 5.5em;
+}
+.myBtn:hover {
+  color: var(--clr-primary);
 }
