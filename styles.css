@@ -161,10 +161,11 @@ h3 {
     margin-left: 1.5em;
   }
 
-  .description {
+  .einleitung {
     margin-top: -10em;
     font-size: 0.5em;
-    margin-bottom: -13em;
+    padding-bottom: 8em;
+    text-align: center;
   }
 }
 
@@ -237,7 +238,7 @@ h3 {
   }
 }
 
-.section__description--description {
+.section__einleitung--einleitung {
   display: hide;
   margin: auto;
   text-align: center;
@@ -246,7 +247,7 @@ h3 {
 }
 
 @media (max-width: 500px) {
-  .description {
+  .einleitung {
     display: block;
     padding-left: 15 auto 20em;
     padding-right: 15 auto 20em;
@@ -255,7 +256,7 @@ h3 {
 }
 
 @media (min-width: 800px) {
-  .description {
+  .einleitung {
     margin-top: -10em;
     display: block;
     padding-left: 15 auto 20em;
@@ -264,7 +265,7 @@ h3 {
 }
 
 @media (min-width: 1200px) {
-  .description {
+  .einleitung {
     display: block;
     padding-left: 17;
     padding-right: 17;
@@ -272,7 +273,7 @@ h3 {
 }
 
 @media (min-width: 2000px) {
-  .description {
+  .einleitung {
     display: block;
     padding-left: 30em;
     padding-right: 30em;
